@@ -307,7 +307,7 @@ class CORE_EXPORT QgsVectorLayerElevationProperties : public QgsMapLayerElevatio
     void setDefaultProfileFillSymbol( const QColor &color );
 
     Qgis::AltitudeClamping mClamping = Qgis::AltitudeClamping::Terrain;
-    Qgis::AltitudeBinding mBinding = Qgis::AltitudeBinding::Centroid;
+    Qgis::AltitudeBinding mBinding = Qgis::AltitudeBinding::Vertex;
 
     Qgis::VectorProfileType mType = Qgis::VectorProfileType::IndividualFeatures;
 

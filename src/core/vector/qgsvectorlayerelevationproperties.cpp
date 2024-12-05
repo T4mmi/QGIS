@@ -137,11 +137,11 @@ void QgsVectorLayerElevationProperties::setDefaultsFromLayer( QgsMapLayer *layer
 
   mDataDefinedProperties.clear();
 
-  mBinding = Qgis::AltitudeBinding::Centroid;
+  mBinding = Qgis::AltitudeBinding::Vertex;
 
   if ( QgsWkbTypes::hasZ( vlayer->wkbType() ) )
   {
-    mClamping = Qgis::AltitudeClamping::Relative;
+    mClamping = Qgis::AltitudeClamping::Absolute;
   }
   else
   {

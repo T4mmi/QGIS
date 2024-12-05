@@ -168,7 +168,7 @@ class CORE_EXPORT QgsVectorLayerProfileGenerator : public QgsAbstractProfileSurf
     double mScale = 1;
     Qgis::VectorProfileType mType = Qgis::VectorProfileType::IndividualFeatures;
     Qgis::AltitudeClamping mClamping = Qgis::AltitudeClamping::Terrain;
-    Qgis::AltitudeBinding mBinding = Qgis::AltitudeBinding::Centroid;
+    Qgis::AltitudeBinding mBinding = Qgis::AltitudeBinding::Vertex;
     bool mExtrusionEnabled = false;
     double mExtrusionHeight = 0;
 

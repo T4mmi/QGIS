@@ -186,9 +186,9 @@ class _3D_EXPORT QgsPolygon3DSymbol : public QgsAbstract3DSymbol SIP_NODEFAULTCT
 
   private:
     //! how to handle altitude of vector features
-    Qgis::AltitudeClamping mAltClamping = Qgis::AltitudeClamping::Relative;
+    Qgis::AltitudeClamping mAltClamping = Qgis::AltitudeClamping::Absolute;
     //! how to handle clamping of vertices of individual features
-    Qgis::AltitudeBinding mAltBinding = Qgis::AltitudeBinding::Centroid;
+    Qgis::AltitudeBinding mAltBinding = Qgis::AltitudeBinding::Vertex;
 
     float mOffset = 0.0f;           //!< Vertical offset of polygons
     float mExtrusionHeight = 0.0f;  //!< How much to extrude (0 means no walls)

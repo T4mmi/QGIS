@@ -124,9 +124,9 @@ class _3D_EXPORT QgsLine3DSymbol : public QgsAbstract3DSymbol SIP_NODEFAULTCTORS
 
   private:
     //! how to handle altitude of vector features
-    Qgis::AltitudeClamping mAltClamping = Qgis::AltitudeClamping::Relative;
+    Qgis::AltitudeClamping mAltClamping = Qgis::AltitudeClamping::Absolute;
     //! how to handle clamping of vertices of individual features
-    Qgis::AltitudeBinding mAltBinding = Qgis::AltitudeBinding::Centroid;
+    Qgis::AltitudeBinding mAltBinding = Qgis::AltitudeBinding::Vertex;
 
     float mWidth = 2.0f;            //!< Line width (horizontally)
     float mOffset = 0.0f;           //!< Base height of polygons
