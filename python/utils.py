@@ -418,7 +418,7 @@ def get_plugin_deps(plugin_id: str) -> dict[str, Optional[str]]:
         else:
             name = dep
             version_required = None
-        result[name] = version_required
+        result[name.strip()] = version_required.strip()
     return result
 
 
